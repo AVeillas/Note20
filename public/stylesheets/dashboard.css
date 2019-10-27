@@ -1,0 +1,168 @@
+@font-face {
+	font-family: Ubuntu;
+	src: url(../fonts/ubuntu-r.ttf);
+}
+
+body, html {
+	font-family: Ubuntu;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+
+#header {
+	list-style-type: none;
+	text-align: right;
+	margin: 0;
+	padding: 3px;
+	background-color: #555555;/*#2466FF;*/
+	color: white;
+	box-shadow: 0 -10px 10px 10px black;
+}
+
+#header li {
+	display: inline;
+	margin: 0;
+	padding: 0 8px 0 0;
+}
+
+#logo {
+	float: left;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropbtn {
+	display: inline;
+	cursor: pointer;
+}
+
+.dropdown-content {
+	margin: 0;
+	display: none;
+	position: absolute;
+	right: 0;
+	z-index: 1;
+	background-color: #FFFFFF;
+	box-shadow: 0 0 25px black;
+	min-width: 150px
+}
+
+.dropdown-content a {
+	color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+	background-color: #F0F0F0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#logout {
+	color: red;
+}
+
+.container {
+	margin: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.topbar {
+	margin-top: 15px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #2191E8;
+	border-bottom: 1px solid #2191E8;
+}
+
+.left-button {
+	display: block;
+	padding: 6px 4px 6px 4px;
+	text-align: center;
+}
+
+.left-button:hover {
+	background-color: #F0F0F0;
+}
+
+#sort:hover {
+	background-color: #F0F0F0;
+}
+
+h1 {
+	padding: 0;
+	margin: 0;
+	font-size: 36px;
+	font-weight: lighter;
+	border-bottom: 3px solid #2191E8;
+}
+
+.notes-container {
+	width: 100%;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.note {
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	height: 300px;
+	margin: 15px;
+	padding: 5px;
+	border: 1px solid #BBBBBB;
+	box-shadow: 0px 20px 40px -15px black;
+}
+
+.note:hover {
+	box-shadow: 0 0 25px #2191E8;
+}
+
+.note p {
+	display: inline-block;
+	flex: 1;
+	cursor: pointer;
+	overflow: auto;
+	word-wrap: break-word;
+	white-space: pre-line;
+}
+
+.note header {
+	font-size: 1.2em;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.note-footer {
+	border-top: 1px solid #BBBBBB;
+	padding-top: 5px;
+	font-size: 0.8em;
+}
+
+#delete-button {
+	float: right;
+	color: red;
+}

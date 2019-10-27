@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Note20 - connexion</title>
+    <link rel='stylesheet' href='/stylesheets/login.css' />
+  </head>
+  <body>
+    <div class='container'>
+    <img src='images/login-logo.png' height='150' width='450'/>
+      <form action='/login' method='POST'>
+        <header>
+          <div class='login-title'>Connexion</div>
+          <div class='login-switch'><a href='/signup'>Inscription</a></div>
+        </header>
+        <div class='textfield'>
+          <img src='/images/login-user.png' />
+          <input type="text" placeholder="Nom d'utilisateur" name="login"/>
+        </div>
+        <div class='textfield'>
+          <img src='/images/login-password.png' />
+          <input type='password' placeholder='Mot de passe' name='passwd'/>
+        </div>
+        <p class='error' id='login-failed'>Nom d'utilisateur ou mot de passe incorrect.</p>
+        <button action='submit'>
+          Se connecter
+        </button>
+      </form>
+    </div>
+    <script>
+      if(<%- error %>) {document.getElementById('login-failed').style.display = 'inline';}
+    </script>
+  </body>
+</html>
