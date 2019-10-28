@@ -2,7 +2,7 @@
 Engineering school project: note taking website using Node.js and MongoDB.
 
 ## Requirements
-Note20 requires *Node.JS* and *MongoDB* to be installed to run.
+Note20 requires **Node.JS** and **MongoDB** to be installed to run.
 
 ## Installation
 Clone this repository into a dedicated directory.
